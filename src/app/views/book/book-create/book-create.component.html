@@ -1,0 +1,20 @@
+<p>Thêm mới sách!</p>
+<div>
+  <form [formGroup]="createBookForm" (ngSubmit)="createNewBook()">
+    <div class="form-group">
+      <label>Tên</label>
+      <input title="text" class="form-control" formControlName="title" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <label>Tác giả</label>
+      <input title="text" class="form-control" formControlName="author" placeholder="Author">
+    </div>
+    <div class="form-group">
+      <label>Mô tả</label>
+      <textarea class="form-control" formControlName="description" placeholder="Description"></textarea>
+    </div>
+
+    <button style="margin: 5px;" class="btn btn-square btn-primary btn-sm" type="submit">Thêm mới</button>
+    <button class="btn btn-square btn-secondary btn-sm" routerLink="/books">Thoát</button>
+  </form>
+</div>

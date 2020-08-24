@@ -1,0 +1,16 @@
+<form [formGroup]="editBookForm" (ngSubmit)="editBookById()">
+  <div class="form-group">
+    <label>Tên</label>
+    <input class="form-control" formControlName="title" type="text"  >
+  </div>
+  <div class="form-group">
+    <label>Tác giả</label>
+    <input class="form-control" formControlName="author" type="text"  >
+  </div>
+  <div class="form-group">
+    <label>Mô tả</label>
+    <textarea class="form-control" formControlName="description" ></textarea>
+  </div>
+  <button style="margin: 5px;" class="btn btn-square btn-primary btn-sm" type="submit">Cập nhật</button>
+  <button class="btn btn-square btn-secondary btn-sm" routerLink="/books">Thoát</button>
+</form>
